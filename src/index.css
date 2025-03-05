@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* Global background styles to be applied to the body element */
+
+body {
+  /* Dark purple/black background color */
+  background-color: #120922;
+  
+  /* Add a subtle gradient overlay */
+  background-image: linear-gradient(to bottom, rgba(26, 10, 42, 0.9), rgba(10, 2, 25, 1));
+  
+  /* Add a subtle noise texture - you would need to create/host this image */
+  /* background-image: url('/path/to/noise-texture.png'), linear-gradient(to bottom, rgba(26, 10, 42, 0.9), rgba(10, 2, 25, 1)); */
+  
+  /* Ensure the background covers the entire viewport */
+  min-height: 100vh;
+  
+  /* Fixed background so it doesn't scroll with content */
+  background-attachment: fixed;
+  
+  /* Ensure background size is appropriate */
+  background-size: cover;
+  
+  /* Set default text color for the site */
+  color: white;
+  
+  /* Remove default margin */
+  margin: 0;
+  padding: 0;
+  
+  /* Set font family */
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Add subtle diagonal decorative elements like in the design */
+.diagonal-decorator {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Makes sure it doesn't interfere with clicks */
+  z-index: 0;
+  opacity: 0.3;
+  background-image: 
+    linear-gradient(45deg, transparent 90%, rgba(128, 0, 255, 0.3) 95%, transparent 100%),
+    linear-gradient(135deg, transparent 80%, rgba(128, 0, 255, 0.2) 85%, transparent 90%),
+    linear-gradient(225deg, transparent 80%, rgba(255, 255, 0, 0.1) 85%, transparent 90%);
+}
+
+/* Add a class for the content container to ensure it sits above the background */
+.content-container {
+  position: relative;
+  z-index: 1; /* Ensures content is above background decorators */
+}
+
+/* Optional: Add CSS variables for the main color scheme for easy reuse */
+:root {
+  --primary-bg: #120922;
+  --secondary-bg: #200a40;
+  --highlight-purple: #8424ff;
+  --highlight-neon: #fcff4b;
+  --text-primary: #ffffff;
+  --text-secondary: #d8d8d8;
+  --section-padding: 4rem 2rem;
+}
+
+/* For responsive designs - adjust padding on smaller screens */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 3rem 1rem;
+  }
+}
