@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/enigma25'
+  base: '/Enigma25'
 })
