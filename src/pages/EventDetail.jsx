@@ -86,7 +86,7 @@ const EventDetail = () => {
             <div className="relative z-10 max-w-6xl mx-auto">
                 {/* Back button */}
                 <Link
-                    to="/events"
+                    to="/Enigma25/events"
                     className="inline-flex items-center text-white hover:text-teal-400 transition-colors mb-6"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
