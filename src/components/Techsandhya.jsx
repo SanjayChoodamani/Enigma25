@@ -1,4 +1,5 @@
 import React from 'react';
+import techsandhya from '/7th.jpg';
 
 const Techsandhya = () => {
     return (
@@ -47,7 +48,7 @@ const Techsandhya = () => {
                             <div className="absolute inset-1 rounded-xl overflow-hidden z-20">
                                 <div className="absolute inset-0 bg-purple-900/30 group-hover:bg-purple-900/10 transition-colors duration-500 z-30"></div>
                                 <img
-                                    src="/7th.jpg"
+                                    src={techsandhya}
                                     alt="Techsandhya"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />

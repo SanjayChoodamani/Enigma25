@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import leftRobot from '/leftRobot.png';
+import rightRobot from '/rightRobot.png';
 
 const HeroSection = () => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -93,7 +95,7 @@ const HeroSection = () => {
                     <div className="w-full md:w-5/12 lg:w-5/12 relative order-1">
                         <div className={`relative ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'} transition-all duration-1000 ease-out`}>
                             <img
-                                src="/leftRobot.png"
+                                src={leftRobot}
                                 alt="Enigma Robot Left"
                                 className="w-full h-auto object-contain max-h-48 md:max-h-screen mx-auto md:mx-0"
                             />
@@ -115,7 +117,7 @@ const HeroSection = () => {
                     <div className="w-full md:w-5/12 lg:w-5/12 relative order-3 md:order-3">
                         <div className={`relative ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'} transition-all duration-1000 ease-out`}>
                             <img
-                                src="/rightRobot.png"
+                                src={rightRobot}
                                 alt="Enigma Robot Right"
                                 className="w-full h-auto object-contain max-h-48 md:max-h-screen mx-auto md:mx-0"
                             />

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,31 +31,31 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                         {/* Logo */}
                         <div className="flex-shrink-0 flex items-center">
-                            <a href="/" className="flex items-center">
+                            <Link to="/Enigma25/" className="flex items-center">
                                 <span className="text-black font-bold text-xl">Enigma</span>
                                 <span className="text-purple-600 font-bold text-xl ml-1">25</span>
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Desktop menu */}
                         <div className="hidden md:flex items-center space-x-4">
-                            <a href="/" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
+                            <Link to="/Enigma25/" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
                                 Home
-                            </a>
-                            <a href="/events" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
+                            </Link>
+                            <Link to="/Enigma25/events" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
                                 Events
-                            </a>
-                            <a href="/workshop" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
+                            </Link>
+                            <Link to="/Enigma25/workshop" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
                                 Workshop and Pronite
-                            </a>
-                            <a href="/team" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
+                            </Link>
+                            <Link to="/Enigma25/team" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
                                 Team
-                            </a>
-                            <a href="/contact" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
+                            </Link>
+                            <Link to="/Enigma25/contact" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
                                 Contact
-                            </a>
+                            </Link>
                             <a
-                                href="/Rulebook.pdf"
+                                href="/Enigma25/Rulebook.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-yellow-400 text-black hover:bg-yellow-300 px-4 py-2 rounded-full text-sm font-medium transition-colors"
@@ -91,23 +92,23 @@ const Navbar = () => {
             {/* Mobile menu, show/hide based on menu state */}
             <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-md mx-4 rounded-lg">
-                    <a href="/" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
+                    <Link to="/Enigma25/" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
                         Home
-                    </a>
-                    <a href="/events" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
+                    </Link>
+                    <Link to="/Enigma25/events" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
                         Events
-                    </a>
-                    <a href="/workshop" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
+                    </Link>
+                    <Link href="/Enigma25/workshop" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
                         Workshop and Pronite
-                    </a>
-                    <a href="/team" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
+                    </Link>
+                    <Link to="/Enigma25/team" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
                         Team
-                    </a>
-                    <a href="/contact" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
+                    </Link>
+                    <Link to="/Enigma25/contact" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
                         Contact
-                    </a>
+                    </Link>
                     <a
-                        href="/Rulebook.pdf"
+                        href="/Enigma25/Rulebook.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-yellow-400 text-black hover:bg-yellow-300 block px-3 py-2 rounded-md text-base font-medium"

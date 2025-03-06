@@ -1,17 +1,26 @@
 import React, { useState, useEffect } from 'react';
+import ktm from '/sponsors/ktm.jpg';
+import hassanNews from '/sponsors/hassanNews.png';
+import poorvika from '/sponsors/poorvika.png';
+import hexa from '/sponsors/hexa.jpg';
+import stockgro from '/sponsors/stockgro.png';
+import teachnook from '/sponsors/teachnook.png';
+import esscee from '/sponsors/esscee.png';
+import vcc from '/sponsors/vcc.jpg';
+
 
 // This would be the main Sponsors component
 const Sponsors = () => {
     // Sample sponsor data - replace images with your actual sponsor images
     const sponsDetails = [
-        { id: 1, image: "/sponsors/ktm.jpg", desc: "TITLE" },
-        { id: 2, image: "/sponsors/hassanNews.png", desc: "SOCIAL MEDIA" },
-        { id: 3, image: "/sponsors/poorvika.png", desc: "CERTIFICATE" },
-        { id: 4, image: "/sponsors/hexa.jpg", desc: "TICKETING" },
-        { id: 5, image: "/sponsors/stockgro.png", desc: "PLATFORM" },
-        { id: 6, image: "/sponsors/teachnook.png", desc: "EDUCATION" },
-        { id: 7, image: "/sponsors/esscee.png", desc: "PRINTING" },
-        { id: 8, image: "/sponsors/vcc.jpg", desc: "NEWS" },
+        { id: 1, image: ktm, desc: "TITLE" },
+        { id: 2, image: hassanNews, desc: "SOCIAL MEDIA" },
+        { id: 3, image: poorvika, desc: "CERTIFICATE" },
+        { id: 4, image: hexa, desc: "TICKETING" },
+        { id: 5, image: stockgro, desc: "PLATFORM" },
+        { id: 6, image: teachnook, desc: "EDUCATION" },
+        { id: 7, image: esscee, desc: "PRINTING" },
+        { id: 8, image: vcc, desc: "NEWS" },
     ];
 
     // Animation effect for sponsors appearing

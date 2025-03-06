@@ -1,4 +1,8 @@
 import React from 'react';
+import robot from '/robot.jpg';
+import paper from '/paper.jpg'; 
+import online from '/online.jpg';
+import fun from '/fun.jpg';
 
 const Overview = () => {
     // Event data - in a real app, you might fetch this from an API
@@ -7,25 +11,25 @@ const Overview = () => {
             id: "design-build",
             title: "Design and Build Events",
             description: "The Design and Build events celebrate the convergence of creativity and engineering. Participants are required to craft robots that display resilient traits. Robots are specially tailored to engage in challenges like RoboKombat, Robosoccer, Mystique Locomotor and many other dynamic events.",
-            icon: "/robot.jpg" 
+            icon: robot
         },
         {
             id: "paper",
             title: "Paper Events",
             description: "As participants engage in this intellectual journey, the Paper Events emerge as a celebration of diverse knowledge, offering a platform where minds collide. It includes events that celebrate the diversity of intellect and fuel the passion for knowledge exploration.",
-            icon: "/paper.jpg" 
+            icon: paper
         },
         {
             id: "online",
             title: "Online Events",
             description: "Online events not only offer a platform for intellectual engagement but also create a space for financial acumen to shine. Online quiz and MCE dollars are two such events that offer intellectual challenges and financial intrigue.",
-            icon: "/online.jpg" 
+            icon: online 
         },
         {
             id: "fun",
             title: "Fun Events",
             description: "The ultimate destination where technology meets the thrill. Fun events include a spectrum of endeavours where participants engage in dynamic challenges, unraveling the mysteries of problem-solving.",
-            icon: "/fun.jpg" 
+            icon: fun 
         }
     ];
 
