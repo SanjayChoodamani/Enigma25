@@ -13,35 +13,35 @@ import EventDetail from './pages/EventDetail';
 
 const router = createBrowserRouter([
     {
-      path: '/',
+      path: 'Enigma25/',
       element: <Home/>
     },
     {
-      path: '/events',
+      path: 'Enigma25/events',
       element: <Events/>
     },
     {
-      path: '/event/:category/:id',
+      path: 'Enigma25/event/:category/:id',
       element: <EventDetail/>
     },
     {
-      path: '/team',
+      path: 'Enigma25/team',
       element: <Team/>
     },
     {
-      path: '/workshop',
+      path: 'Enigma25/workshop',
       element: <Workshop/>
     },
     {
-      path: '/contact',
+      path: 'Enigma25/contact',
       element: <Contact/>
     },
     {
-      path: '/terms',
+      path: 'Enigma25/terms',
       element: <TandC/>
     },
     {
-      path: '/refund',
+      path: 'Enigma25/refund',
       element: <RefundPage/>
     }
 ]);
