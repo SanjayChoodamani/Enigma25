@@ -243,7 +243,7 @@ const EventContainer = (props) => {
                     </p>
 
                     <Link
-                        to={`/event/${eventCategory}/${eventId}`}
+                        to={`/Enigma25/event/${eventCategory}/${eventId}`}
                         className="self-start px-6 py-2 bg-gradient-to-r from-purple-700/80 to-teal-500/80 rounded-full text-white font-medium hover:from-teal-500/80 hover:to-purple-700/80 transition-all duration-300 group flex items-center"
                     >
                         <span>Know More</span>
