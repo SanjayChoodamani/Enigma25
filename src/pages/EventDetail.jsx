@@ -43,7 +43,7 @@ const EventDetail = () => {
             <div className="w-full min-h-screen bg-black flex flex-col items-center justify-center p-4">
                 <div className="text-white text-2xl mb-6">Event not found</div>
                 <Link
-                    to="/events"
+                    to="/Enigma25/events"
                     className="px-6 py-2 bg-gradient-to-r from-purple-700/80 to-teal-500/80 rounded-full text-white font-medium hover:from-teal-500/80 hover:to-purple-700/80 transition-all duration-300"
                 >
                     Back to Events
