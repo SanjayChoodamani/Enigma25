@@ -31,7 +31,7 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                         {/* Logo */}
                         <div className="flex-shrink-0 flex items-center">
-                            <Link to="/Enigma25/" className="flex items-center">
+                            <Link to="/" className="flex items-center">
                                 <span className="text-black font-bold text-xl">Enigma</span>
                                 <span className="text-purple-600 font-bold text-xl ml-1">25</span>
                             </Link>
@@ -39,19 +39,19 @@ const Navbar = () => {
 
                         {/* Desktop menu */}
                         <div className="hidden md:flex items-center space-x-4">
-                            <Link to="/Enigma25/" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
+                            <Link to="/" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
                                 Home
                             </Link>
-                            <Link to="/Enigma25/events" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
+                            <Link to="/events" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
                                 Events
                             </Link>
-                            <Link to="/Enigma25/workshop" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
+                            <Link to="/workshop" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
                                 Workshop and Pronite
                             </Link>
-                            <Link to="/Enigma25/team" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
+                            <Link to="/team" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
                                 Team
                             </Link>
-                            <Link to="/Enigma25/contact" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
+                            <Link to="/contact" className="text-black hover:text-purple-700 px-3 py-2 text-sm font-medium">
                                 Contact
                             </Link>
                             <a
@@ -92,19 +92,19 @@ const Navbar = () => {
             {/* Mobile menu, show/hide based on menu state */}
             <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-md mx-4 rounded-lg">
-                    <Link to="/Enigma25/" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
+                    <Link to="/" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
                         Home
                     </Link>
-                    <Link to="/Enigma25/events" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
+                    <Link to="/events" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
                         Events
                     </Link>
-                    <Link href="/Enigma25/workshop" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
+                    <Link href="/workshop" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
                         Workshop and Pronite
                     </Link>
-                    <Link to="/Enigma25/team" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
+                    <Link to="/team" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
                         Team
                     </Link>
-                    <Link to="/Enigma25/contact" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
+                    <Link to="/contact" className="text-black hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">
                         Contact
                     </Link>
                     <a

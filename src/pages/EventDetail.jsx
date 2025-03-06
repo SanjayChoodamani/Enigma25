@@ -43,7 +43,7 @@ const EventDetail = () => {
             <div className="w-full min-h-screen bg-black flex flex-col items-center justify-center p-4">
                 <div className="text-white text-2xl mb-6">Event not found</div>
                 <Link
-                    to="/Enigma25/events"
+                    to="/events"
                     className="px-6 py-2 bg-gradient-to-r from-purple-700/80 to-teal-500/80 rounded-full text-white font-medium hover:from-teal-500/80 hover:to-purple-700/80 transition-all duration-300"
                 >
                     Back to Events
@@ -86,7 +86,7 @@ const EventDetail = () => {
             <div className="relative z-10 max-w-6xl mx-auto">
                 {/* Back button */}
                 <Link
-                    to="/Enigma25/events"
+                    to="/events"
                     className="inline-flex items-center text-white hover:text-teal-400 transition-colors mb-6"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">

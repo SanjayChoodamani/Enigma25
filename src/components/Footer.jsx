@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -62,13 +63,13 @@ const Footer = () => {
                             </h3>
 
                             <div className="grid grid-cols-2 gap-x-4 gap-y-3">
-                                <a href="/" className="text-white/80 hover:text-teal-400 transition-colors">Home</a>
-                                <a href="/Events" className="text-white/80 hover:text-teal-400 transition-colors">Events</a>
-                                <a href="/Workshop-Shows" className="text-white/80 hover:text-teal-400 transition-colors">Workshop and Pronite</a>
-                                <a href="/Team" className="text-white/80 hover:text-teal-400 transition-colors">Team</a>
-                                <a href="/Contact" className="text-white/80 hover:text-teal-400 transition-colors">Contact</a>
-                                <a href="/terms" className="text-white/80 hover:text-teal-400 transition-colors">Terms and Conditions</a>
-                                <a href="/refund" className="text-white/80 hover:text-teal-400 transition-colors">Refund Policy</a>
+                                <Link to="/" className="text-white/80 hover:text-teal-400 transition-colors">Home</Link>
+                                <Link to="events" className="text-white/80 hover:text-teal-400 transition-colors">Events</Link>
+                                <Link to="/workshop" className="text-white/80 hover:text-teal-400 transition-colors">Workshop and Pronite</Link>
+                                <Link to="/team" className="text-white/80 hover:text-teal-400 transition-colors">Team</Link>
+                                <Link to="/contact" className="text-white/80 hover:text-teal-400 transition-colors">Contact</Link>
+                                <Link to="/terms" className="text-white/80 hover:text-teal-400 transition-colors">Terms and Conditions</Link>
+                                <Link to="/refund" className="text-white/80 hover:text-teal-400 transition-colors">Refund Policy</Link>
                             </div>
                         </div>
 

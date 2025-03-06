@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HashRouter, Route, Routes } from 'react-router-dom'
 
 //import all pages
 import Home from './pages/Home';
@@ -11,44 +11,20 @@ import TandC from './pages/TandC';
 import RefundPage from './pages/RefundPage';
 import EventDetail from './pages/EventDetail'; 
 
-const router = createBrowserRouter([
-    {
-      path: '/Enigma25/',
-      element: <Home/>
-    },
-    {
-      path: '/Enigma25/events',
-      element: <Events/>
-    },
-    {
-      path: '/Enigma25/event/:category/:id',
-      element: <EventDetail/>
-    },
-    {
-      path: '/Enigma25/team',
-      element: <Team/>
-    },
-    {
-      path: '/Enigma25/workshop',
-      element: <Workshop/>
-    },
-    {
-      path: '/Enigma25/contact',
-      element: <Contact/>
-    },
-    {
-      path: '/Enigma25/terms',
-      element: <TandC/>
-    },
-    {
-      path: '/Enigma25/refund',
-      element: <RefundPage/>
-    }
-]);
-
 const App = () => {
   return (
-    <RouterProvider router={router}/>
+    <HashRouter>
+      <Routes>
+        <Route excat path="/" element={<Home/>} />
+        <Route path="/events" element={<Events/>} />
+        <Route path="/event/:category/:id" element={<EventDetail/>} />
+        <Route path="/team" element={<Team/>} />
+        <Route path="/workshop" element={<Workshop/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/terms" element={<TandC/>} />
+        <Route path="/refund" element={<RefundPage/>} />
+      </Routes>
+    </HashRouter>
   )
 }
 
